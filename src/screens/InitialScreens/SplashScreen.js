@@ -1,12 +1,21 @@
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, ScrollView, StyleSheet, View} from 'react-native';
 import React from 'react';
 import imagePath from '../../constant/imagePath';
-
+import NearByHospital from '../../components/NearByHospital';
 const SplashScreen = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView>
+      <NearByHospital />
       <Image source={imagePath.appLogo} style={styles.imageStyle} />
-    </View>
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+      <Image source={imagePath.appLogo} style={styles.imageStyle} />
+    </ScrollView>
   );
 };
 
@@ -16,8 +25,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   imageStyle: {
     height: 300,
